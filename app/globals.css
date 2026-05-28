@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  .light {
+    --color-slate-950: #f8fafc;
+    --color-slate-900: #f1f5f9;
+    --color-slate-800: #e2e8f0;
+    --color-slate-700: #cbd5e1;
+    --color-slate-600: #94a3b8;
+    --color-slate-400: #475569;
+    --color-slate-300: #334155;
+    --color-slate-200: #1e293b;
+    --color-slate-100: #0f172a;
+    --color-slate-50: #020617;
+    --color-white: #020617;
+  }
+}
+
+@theme {
+  --color-royal-blue: #1d4ed8;
+  --color-royal-blue-light: #3b82f6;
+  --color-royal-blue-dark: #1e3a8a;
+  --color-cream-white: #f8fafc;
+  --color-wine-red: #be123c;
+  --color-wine-red-light: #e11d48;
+  
+  --color-background-dark: #020617;
+  --color-surface-dark: #0f172a;
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #020617;
+    --foreground: #f8fafc;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .neon-glow-blue {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.3);
+  }
+  
+  .neon-glow-red {
+    box-shadow: 0 0 15px rgba(225, 29, 72, 0.5), 0 0 30px rgba(225, 29, 72, 0.3);
+  }
+  
+  .neon-text-blue {
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+  }
+  
+  .neon-text-red {
+    text-shadow: 0 0 8px rgba(225, 29, 72, 0.6);
+  }
+
+  /* Custom scrollbar for webkit */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(59, 130, 246, 0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(59, 130, 246, 0.5);
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}

@@ -1,0 +1,141 @@
+[
+  {
+    "technology": "Quantum Computing",
+    "category": "Quantum Information Science",
+    "definition": "Quantum computing is a rapidly-emerging technology that harnesses the laws of quantum mechanics to solve problems too complex for classical computers. It relies on quantum bits, or qubits.",
+    "core_concepts": [
+      "Superposition",
+      "Entanglement",
+      "Quantum Interference",
+      "Qubit"
+    ],
+    "applications": [
+      "Cryptography",
+      "Drug Discovery",
+      "Financial Modeling",
+      "Climate Change Modeling",
+      "Logistics Optimization"
+    ],
+    "advantages": [
+      "Exponential speedup for specific problems",
+      "Ability to simulate molecular processes",
+      "Enhanced cryptography capabilities"
+    ],
+    "limitations": [
+      "High error rates and decoherence",
+      "Requires extreme cooling (near absolute zero)",
+      "High cost of development and operation"
+    ],
+    "faqs": [
+      {
+        "question": "What is a qubit?",
+        "answer": "A qubit (quantum bit) is the basic unit of quantum information, capable of existing in multiple states (0 and 1) simultaneously due to superposition."
+      },
+      {
+        "question": "When will quantum computers be available?",
+        "answer": "While early models exist today for research and enterprise, broad commercial availability of fault-tolerant quantum computers is expected in the next 10-15 years."
+      }
+    ]
+  },
+  {
+    "technology": "Blockchain",
+    "category": "Web3",
+    "definition": "Blockchain is a decentralized, distributed, and public digital ledger that is used to record transactions across many computers so that the record cannot be altered retroactively without the alteration of all subsequent blocks and the consensus of the network.",
+    "core_concepts": [
+      "Decentralization",
+      "Cryptography",
+      "Consensus Mechanisms",
+      "Smart Contracts"
+    ],
+    "applications": [
+      "Cryptocurrencies",
+      "Supply Chain Tracking",
+      "Decentralized Finance (DeFi)",
+      "Non-Fungible Tokens (NFTs)"
+    ],
+    "advantages": [
+      "Transparency",
+      "Security",
+      "Immutability",
+      "Removes intermediaries"
+    ],
+    "limitations": [
+      "Scalability issues",
+      "High energy consumption (for Proof of Work)",
+      "Regulatory uncertainty"
+    ],
+    "faqs": [
+      {
+        "question": "Is Blockchain the same as Bitcoin?",
+        "answer": "No. Bitcoin is a cryptocurrency that uses blockchain technology to operate. Blockchain is the underlying technology."
+      }
+    ]
+  },
+  {
+    "technology": "Generative AI",
+    "category": "Artificial Intelligence",
+    "definition": "Generative AI is a type of artificial intelligence that can create new content, such as text, images, audio, and code, based on patterns it has learned from existing data.",
+    "core_concepts": [
+      "Large Language Models (LLMs)",
+      "Neural Networks",
+      "Transformers",
+      "Prompt Engineering"
+    ],
+    "applications": [
+      "Content Creation",
+      "Code Generation",
+      "Virtual Assistants",
+      "Art and Design",
+      "Personalized Marketing"
+    ],
+    "advantages": [
+      "Rapid content generation",
+      "Creativity augmentation",
+      "24/7 availability for customer support"
+    ],
+    "limitations": [
+      "Hallucinations (generating false information)",
+      "Bias in training data",
+      "High computational costs for training"
+    ],
+    "faqs": [
+      {
+        "question": "How do LLMs work?",
+        "answer": "LLMs predict the next word in a sequence by analyzing massive amounts of text data using a transformer neural network architecture."
+      }
+    ]
+  },
+  {
+    "technology": "Metaverse",
+    "category": "AR / VR / XR",
+    "definition": "The metaverse is a hypothesized iteration of the internet as a single, universal, and immersive virtual world that is facilitated by the use of virtual reality (VR) and augmented reality (AR) headsets.",
+    "core_concepts": [
+      "Virtual Reality (VR)",
+      "Augmented Reality (AR)",
+      "Digital Avatars",
+      "Spatial Computing"
+    ],
+    "applications": [
+      "Virtual Meetings and Workspaces",
+      "Immersive Gaming",
+      "Virtual Real Estate",
+      "E-commerce (Virtual Try-ons)"
+    ],
+    "advantages": [
+      "Enhanced global connectivity",
+      "Immersive educational experiences",
+      "New digital economies"
+    ],
+    "limitations": [
+      "Hardware costs and accessibility",
+      "Privacy and security concerns",
+      "Potential for digital addiction"
+    ],
+    "faqs": [
+      {
+        "question": "Do I need a VR headset to access the metaverse?",
+        "answer": "While VR headsets provide the most immersive experience, many metaverse platforms can also be accessed via standard computers and smartphones."
+      }
+    ]
+  }
+]
