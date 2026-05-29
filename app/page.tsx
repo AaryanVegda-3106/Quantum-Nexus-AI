@@ -119,7 +119,15 @@ export default function Home() {
         }),
       });
 
-      if (!response.ok) throw new Error("Failed to fetch response");
+      // Handle API errors
+      if (!response.ok) {
+        let errorMsg = "Failed to fetch response";
+        try {
+          const errorData = await response.json();
+          if (errorData.error) errorMsg = errorData.error;
+        } catch (e) {}
+        throw new Error(errorMsg);
+      }
 
       const data = await response.json();
       
@@ -131,10 +139,11 @@ export default function Home() {
       setMessages(updatedMessages);
       setSessions(prev => prev.map(s => s.id === currentSessionId ? { ...s, messages: updatedMessages } : s));
 
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
+      const errorMessage = error.message || "Error connecting to Quantum Nexus core. Please try again.";
       const updatedMessages = newMessages.map((msg) =>
-        msg.id === aiMsgId ? { ...msg, content: "Error connecting to Quantum Nexus core. Please try again.", isTyping: false } : msg
+        msg.id === aiMsgId ? { ...msg, content: `Error: ${errorMessage}`, isTyping: false } : msg
       );
       setMessages(updatedMessages);
       setSessions(prev => prev.map(s => s.id === currentSessionId ? { ...s, messages: updatedMessages } : s));

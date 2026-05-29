@@ -82,8 +82,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ response: response.text });
 
-  } catch (error) {
+  } catch (error: any) {
     console.error("API Chat Error:", error);
-    return NextResponse.json({ error: "Failed to generate response" }, { status: 500 });
+    return NextResponse.json({ error: error.message || "Failed to generate response" }, { status: 500 });
   }
 }
