@@ -1,5 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+import os
+
+# Load the Next.js .env.local file
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env.local"))
 from api import chat_router
 
 app = FastAPI(
